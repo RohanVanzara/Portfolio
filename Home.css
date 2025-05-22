@@ -1,0 +1,158 @@
+/* General */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0F1624;
+    color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #0F1624;
+
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-links li a.active,
+.navbar-links li a:hover {
+    color: #00FFFF;
+}
+
+/* Container for padding and centering */
+.container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 4rem 0;
+}
+
+/* Text Section */
+.hero-text {
+    max-width: 600px;
+    margin-bottom: 3rem;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    font-size: 1.5rem;
+}
+
+.hero-text h3 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.highlight {
+    color: #00FFFF;
+}
+
+.hero-text p {
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    background-color: transparent;
+    border: 2px solid aqua;
+    color: aqua;
+    border-radius: 50%;
+    padding: 0.6rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background-color: aqua;
+    color: #0F1624;
+    box-shadow: 0 0 20px #00FFFF;
+
+}
+
+.download-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #00FFFF;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.download-btn:hover {
+    background-color: #0ce7e7;
+    box-shadow: 0 0 20px #00FFFF;
+
+}
+
+/* Image Section */
+.hero-image {
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0 0 25px #00FFFF;
+    overflow: hidden;
+}
+
+.image-wrapper img {
+    border-radius: 2rem;
+    width: 450px;
+    height: auto;
+    object-fit: cover;
+}
